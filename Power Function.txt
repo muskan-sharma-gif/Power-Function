@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class Power {
+}
+class Power1 {
+    public static int power(int x, int n) {
+        int mul = 1;
+        if (x != 0 && n != 0) {
+            for (int i = 0; i < n; i++) {
+                mul = mul * x;
+            }
+            return mul;
+        } else {
+            return 1;
+        }
+    }
+    public static void main(String[] args) {
+           Scanner sc =new Scanner(System.in);
+           int x =sc.nextInt();
+           int n =sc.nextInt();
+            System.out.println(power(x,n));
+
+        }
+    }
+
